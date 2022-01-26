@@ -1,1 +1,2 @@
-# ff-samples
+# Code samples to test Function Frameworks
+
