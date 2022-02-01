@@ -14,3 +14,5 @@ export FUNCTION_SIGNATURE_TYPE=cloudevent
 ```
 
 `php -S localhost:8080 vendor/bin/router.php`
+
+gcloud functions deploy helloHttp --runtime php74 --trigger-http --allow-unauthenticated

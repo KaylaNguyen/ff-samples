@@ -14,3 +14,5 @@ dotnet new gcf-http
 ```
 
 `dotnet run`
+
+gcloud functions deploy dotnet-function --runtime dotnet3 --trigger-http --allow-unauthenticated --entry-point dotnet.Function

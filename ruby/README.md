@@ -27,3 +27,5 @@ gem install bundle
 bundle install
 toys server http_example
 ```
+
+gcloud functions deploy http_example --runtime ruby27 --trigger-http --allow-unauthenticated
