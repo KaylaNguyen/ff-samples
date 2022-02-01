@@ -13,4 +13,5 @@ COPY . .
 RUN pip install functions-framework
 
 # Run the web service on container startup.
-CMD exec functions-framework --target=hello
+#CMD exec functions-framework --target=hello
+CMD exec functions-framework --target=hello_cloud_event

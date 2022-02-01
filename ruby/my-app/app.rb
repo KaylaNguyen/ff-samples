@@ -25,11 +25,6 @@ end
 # Create a simple CloudEvents function called "event_example"
 FunctionsFramework.cloud_event "event_example" do |event|
   FunctionsFramework.logger.info "I received #{event.data.inspect} in an event of type #{event.type}"
+#   raise Exception.new "Intended exception"
+  return false, "Intended error"
 end
-
-# gem install toys --user-install
-# export PATH=/Users/kaylanguyen/.local/share/gem/ruby/2.6.0/bin:$PATH
-# toys system update
-# gem install bundle
-# bundle install
-# toys server http_example

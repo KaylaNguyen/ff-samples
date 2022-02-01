@@ -3,7 +3,8 @@ java/target
 php/vendor
 php/composer.lock
 nodejs/package-lock.json
-dotnet/bin
-dotnet/obj
-go/go.sum
-/nodejs/node_modules/
+nodejs/node_modules/
+dotnet/HelloFunctions/bin
+dotnet/HelloFunctions/obj
+dotnet/HelloEvents/bin
+dotnet/HelloEvents/obj

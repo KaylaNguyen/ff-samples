@@ -12,7 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 import json
+import functions_framework
 
+@functions_framework.http
 def hello(request):
 #     unhandled_err = json.loads('{"__type__": "User", "name": "John Smith", "username"}')
+    raise Exception("Intended exception")
+
+@functions_framework.cloud_event
+def hello_cloud_event(cloud_event):
+#    print(f"Received event with ID: {cloud_event['id']} and data {cloud_event.data}")
+    return errors.New()
     raise Exception("Intended exception")

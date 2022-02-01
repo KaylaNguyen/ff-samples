@@ -8,10 +8,14 @@ import (
 	"example.com/hello"
 	"github.com/GoogleCloudPlatform/functions-framework-go/funcframework"
 )
+
 func main() {
 	ctx := context.Background()
 	if err := funcframework.RegisterHTTPFunctionContext(ctx, "/", hello.HelloWorld); err != nil {
 		log.Fatalf("funcframework.RegisterHTTPFunctionContext: %v\n", err)
+	}
+	if err := funcframework.RegisterCloudEventFunctionContext(ctx, "/", hello.CloudEvent); err != nil {
+		log.Fatalf("funcframework.RegisterCloudEventFunctionContext: %v\n", err)
 	}
 	// Use PORT environment variable, or default to 8080.
 	port := "8080"

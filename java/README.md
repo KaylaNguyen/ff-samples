@@ -1,3 +1,7 @@
 # Usage
 
-`go run cmd/main.go`
+`export FUNCTION_TARGET=com.example.CEFunction` or
+
+`export FUNCTION_TARGET=com.example.HelloWorld`
+
+`mvn function:run`

@@ -6,4 +6,11 @@
 
 `dotnet new gcf-http`
 
+or
+```
+mkdir HelloFunctions
+cd HelloFunctions
+dotnet new gcf-http
+```
+
 `dotnet run`

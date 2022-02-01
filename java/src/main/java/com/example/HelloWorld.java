@@ -8,7 +8,6 @@ public class HelloWorld implements HttpFunction {
   @Override
   public void service(HttpRequest request, HttpResponse response)
       throws Exception {
-    // response.getWriter().write("Hello, World\n");
     throw new Exception("Intended Exception");
   }
 }

@@ -42,6 +42,7 @@ use Google\CloudFunctions\CloudEvent;
 
 function helloCloudEvent(CloudEvent $cloudevent)
 {
-    $stdout = fopen('php://stdout', 'wb');
-    fwrite($stdout, $cloudevent);
+//     $stdout = fopen('php://stdout', 'wb');
+//     fwrite($stdout, $cloudevent);
+    throw new Exception("Intended exception");
 }

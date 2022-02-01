@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "functions-framework --target=helloWorld"
+    "start": "functions-framework --target=helloWorld",
+    "startCE": "functions-framework --target=helloCloudEvents"
   },
   "author": "",
   "license": "ISC",
