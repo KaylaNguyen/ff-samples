@@ -8,15 +8,15 @@ import (
 	"log"
 	"net/http"
 
-	//"github.com/GoogleCloudPlatform/functions-framework-go/funcframework"
+	"github.com/GoogleCloudPlatform/functions-framework-go/functions"
 	cloudevents "github.com/cloudevents/sdk-go/v2"
 )
 
 
-//func init() {
-//	funcframework.HTTP("hello", HelloWorld)
-//	funcframework.CloudEvent("ce", CloudEvent)
-//}
+func init() {
+	functions.HTTP("hello", HelloWorld)
+	functions.CloudEvent("ce", CloudEvent)
+}
 
 // HelloWorld writes "Hello, World!" to the HTTP response.
 func HelloWorld(w http.ResponseWriter, r *http.Request) {
